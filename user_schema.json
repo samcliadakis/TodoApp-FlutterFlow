@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserSchema",
+  "type": "object",
+  "properties": {
+    "birthdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "photo_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "uid": {
+      "type": "string"
+    }
+  },
+  "required": ["birthdate", "created_time", "display_name", "email", "photo_url", "uid"]
+}
