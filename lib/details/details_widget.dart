@@ -67,6 +67,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
             child: Padding(
               padding: const EdgeInsets.all(24.0),
               child: Container(
+                width: 400.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   borderRadius: BorderRadius.circular(24.0),
