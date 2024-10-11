@@ -720,6 +720,28 @@ class _LoginWidgetState extends State<LoginWidget>
                         ],
                       ),
                     ),
+                    Align(
+                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {},
+                        child: Text(
+                          'Check your email for a welcome message!',
+                          textAlign: TextAlign.center,
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Noto Sans JP',
+                                    color: const Color(0xFF376C46),
+                                    fontSize: 25.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                        ),
+                      ),
+                    ),
                     Stack(
                       children: [
                         if (_model.tabBarCurrentIndex == 1)
